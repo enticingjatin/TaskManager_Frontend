@@ -25,7 +25,7 @@ export default function Register() {
 
 
     const loginHandler = async () =>{
-      await axios.post("http://localhost:5000/api/auth/signup", {
+      await axios.post("https://task-manager-frontend-modo.onrender.com/api/auth/signup", {
           "username": username,
           "password": password,
           "mobile": mobile,

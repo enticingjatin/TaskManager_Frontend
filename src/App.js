@@ -55,7 +55,7 @@ function App() {
   const handleClose = () => setOpen(false);
 
   const getData = async () => {
-    await axios.get("http://localhost:5000/api/task/get", {
+    await axios.get("https://task-manager-frontend-modo.onrender.com/api/task/get", {
       "headers": {
         "user-token": ContextData.context.userToken
       }
@@ -66,7 +66,7 @@ function App() {
 
 
   const handleDelete = async (id) => {
-    await axios.post("http://localhost:5000/api/task/delete/"+id, {
+    await axios.post("https://task-manager-frontend-modo.onrender.com/api/task/delete/"+id, {
       
     }, {
       "headers": {

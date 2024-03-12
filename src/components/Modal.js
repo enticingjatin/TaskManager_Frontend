@@ -27,7 +27,7 @@ export default function BasicModal(props) {
 
     const handleSubmit = async () => {
 
-        await axios.post((!props.edit)?"http://localhost:5000/api/task/create":"http://localhost:5000/api/task/update/"+props.edata._id, {
+        await axios.post((!props.edit)?"https://task-manager-frontend-modo.onrender.com/api/task/create":"https://task-manager-frontend-modo.onrender.com/api/task/update/"+props.edata._id, {
             "title": props.title,
             "description": props.description
         },{
